@@ -1,0 +1,121 @@
+
+/* font */
+
+* {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+   padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(248, 240, 229);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* header */
+
+header{
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.541);
+}
+header h3{
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+/* main */
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    text-align: center;
+    /* height: 500px; */
+}
+h1{
+    text-decoration: underline;
+    cursor: pointer;
+    color: brown;
+}
+
+/* buttons */
+.buttons{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+    width: 70%;
+    /* align-items: center; */
+
+}
+button{
+    background-color: transparent;
+    border: 2px solid brown;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.meals img{
+    width: 225.4px;
+    height: 144px;
+    object-fit: cover;
+    border: 3px solid brown;
+    border-radius: 10px;
+}
+.meals{
+    width: 100%;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+span{
+    display: block;
+    border: 1.9px solid rgba(138, 129, 129, 0.308);
+    border-radius: 5px;
+}
+
+/*  */
+.meal{
+    display: flex;
+    width: 600px;
+    height: 150px;
+    color: black;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+.meal h1{
+    color: black;
+    text-decoration: none;
+    font-size: 1.17rem;
+    letter-spacing: 7px;
+}
+.meal h2{
+    color: brown;
+    letter-spacing: 7px;
+    font-size: 16px;
+}
+.top{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.meal p{
+    margin-top: 20px;
+}
