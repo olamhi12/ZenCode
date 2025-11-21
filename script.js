@@ -111,9 +111,32 @@ const button = document.querySelectorAll(".buttons button")
 
 button.forEach((but)=>{
  but.addEventListener("click", ()=>{
-   meals.forEach((meal)=>{
-    if (but.innerHTML == meal.category) {
-      container.innerHTML += `<div class="meal">
+   const New = meals.filter(meal =>  meal.category == but.innerHTML )
+    container.innerHTML = ""  
+
+    New.forEach((mea)=> {
+      container.innerHTML += `
+        <div class="meal">
+          <div class="rice">
+            <img src=${mea.image} alt="" />
+          </div>
+          <div class="decription">
+            <div class="top">
+              <h1>${mea.name}</h1>
+              <h2>#${mea.price}</h2>
+            </div>
+            <span></span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>`
+    })
+    
+    if (but.innerHTML == "All") {
+      meals.forEach((meal)=>{
+        container.innerHTML += `
+        <div class="meal">
           <div class="rice">
             <img
               src=${meal.image}
@@ -132,9 +155,11 @@ button.forEach((but)=>{
               quia quos?
             </p>
           </div>
-        </div>`
+        </div>
+`;
+      })
     }
-  })
+    
  })
 })
 
