@@ -13,7 +13,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
+    width: 100%;
 }
 /* header */
 
@@ -82,6 +83,7 @@ button{
     gap: 1.5rem;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     margin-top: 50px;
 
 }
@@ -118,4 +120,31 @@ span{
 }
 .meal p{
     margin-top: 20px;
+}
+
+
+
+@media screen and (max-width: 600px){
+    header{
+        width: 100%;
+        
+    }
+
+    .meals img{
+        width: 150px;
+        height: 150px;
+    }
+    .meal h1{
+    font-size: small;
+}
+
+.meal h2{
+    font-size: 10px;
+}
+.meal{
+    width: 90%;
+}
+.meal p{
+    font-size: 10px;
+}
 }
